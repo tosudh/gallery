@@ -18,6 +18,10 @@ export const NavItemStyled = styled.a`
   text-decoration: none;
   font-weight: 500;
   display: inline-block;
+  color:#000;
+  &:hover{
+    color:#666;
+  }
   `;
 export const SearchBarStyled = styled.div`
 border:1px solid #ccc;
