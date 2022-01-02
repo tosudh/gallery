@@ -1,4 +1,4 @@
-import { ContainerStyled } from "../../style";
+// import { ContainerStyled } from "../../style";
 import styled from "styled-components";
 
 export const BannerStyled = styled.div`
@@ -24,21 +24,25 @@ export const ImageSection = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  padding: 4em;
 `;
 
 export const ImageColumn = styled.div`
-  flex: 25%;
+  flex: 20%;
   /* border: 1px solid red; */
+  /* gap:150px; */
+  margin: 1em;
+
 `;
 export const ImageContainer = styled.div`
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   border-radius: 8px;
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 2em;
+  margin-top: 2em;
 `;
 export const Image = styled.img`
   border: none;
@@ -53,6 +57,9 @@ export const ImageAuthor = styled.div`
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid #ccc;
+  border-radius:0 0 8px 8px ;
+
 `;
 export const AuthorDetails = styled.div`
   display: inline-flex;
@@ -70,13 +77,16 @@ export const AuthorName = styled.span`
 export const AuthorUsername = styled.span`
   color: grey;
   font-weight: 400;
+  font-size: 0.8em;
+  padding-top: 2px;
+  font-style: italic;
+
   &:before {
     content: "@";
   }
 `;
 export const ImageLikes = styled.span`
   display: inline-flex;
-  &:before {
-    content: "👍";
-  }
+  gap:2px;
+  align-items: center;
 `;
